@@ -1,0 +1,9 @@
+<div *ngIf="image$ | async as img" class="card h500px margin20 border-radius-10px">
+    <div class="container-img w100 h150px ">
+        <img [src]="img.avatar" class="img-borders" />
+    </div>
+    <div class="container">
+        <h4><b>{{img.name}}</b></h4>
+        <p>{{img.type}}</p>
+    </div>
+</div>

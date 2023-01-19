@@ -1,0 +1,16 @@
+<div class="cards-list">
+
+    <div *ngFor="let animal of animalDisplayList; trackBy: trackList" class="card margin20 border-radius-10px">
+        <div class="container-img w300px h120px">
+            <img [src]="animal.avatar" [routerLink]="['/list', animal.id]" class="img-borders"/>
+        </div>
+        <div class="container">
+            <h4>{{animal.name}}</h4>
+            <p class="subtitle">{{animal.type}}</p>
+        </div>
+    </div>
+
+</div>
+<div class="txtCenter margin30">
+    <button class="button" (click)="updateCards()">Update</button>
+</div>
