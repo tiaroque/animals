@@ -20,7 +20,7 @@ export interface AnimalInfo {
 })
 export class AnimalsService {
 
-  line1: string = "1";
+  line1: string = "line1";
 
   private _itemNum: number = 0;
   get itemNum(): number {
