@@ -20,9 +20,6 @@ export interface AnimalInfo {
 })
 export class AnimalsService {
 
-  line2: string = "2";
-  line1: string = "line1";
-
   private _itemNum: number = 0;
   get itemNum(): number {
     return this._itemNum;
